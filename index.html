@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+<body>
+    <div class="video-container paused" data-volume-level="high">
+        <div class="video-controls-container"> 
+            <div class="timeline-container">
+            </div>
+            
+            <div class="controls">
+                
+                <button class="play-pause-btn">
+                    <svg class="play-icon" fill="#ffffff" height="100%" width="100%" version="1.1" viewBox="0 0 36 36" ><use class="ytp-svg-shadow" xlink:href="#ytp-id-1228"></use><path class="ytp-svg-fill" d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z" id="ytp-id-1228"></path></svg>                  
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg"  height="28" width="18" viewBox="0 0 320 512">!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path fill="#ffffff" d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/></svg> -->
+                    <svg  class="pause-icon" height="100%"version="1.1" viewBox="0 0 36 36" width="100%" fill="#ffffff" ><use class="ytp-svg-shadow" xlink:href="#ytp-id-1354"></use><path class="ytp-svg-fill" d="M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z" id="ytp-id-1354"></path></svg>
+                </button>
+                <div class="duration-container">
+                    <div class="current-time">0:00</div>
+                    /
+                    <div class="total-time"></div>
+                </div>
+              
+                <button class="theater-btn">
+                    <svg class="theater-on"height="100%"  width="100%" version="1.1" viewBox="0 0 36 36" ><use class="ytp-svg-shadow" xlink:href="#ytp-id-1244"></use><path d="m 28,11 0,14 -20,0 0,-14 z m -18,2 16,0 0,10 -16,0 0,-10 z" fill="#fff" fill-rule="evenodd" id="ytp-id-1244"></path></svg>
+                    <svg class="theater-off" height="100%"  width="100%" version="1.1" viewBox="0 0 36 36" ><use class="ytp-svg-shadow" xlink:href="#ytp-id-220"></use><path d="m 26,13 0,10 -16,0 0,-10 z m -14,2 12,0 0,6 -12,0 0,-6 z" fill="#fff" fill-rule="evenodd" id="ytp-id-220"></path></svg>
+                </button>
+                <button class="fullscreen-btn">
+                    <svg class="fullscreen-on"  height="100%"  width="100%" version="1.1" viewBox="0 0 36 36"  fill="#ffffff"><g class="ytp-fullscreen-button-corner-0"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1054"></use><path class="ytp-svg-fill" d="m 10,16 2,0 0,-4 4,0 0,-2 L 10,10 l 0,6 0,0 z" id="ytp-id-1054"></path></g><g class="ytp-fullscreen-button-corner-1"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1055"></use><path class="ytp-svg-fill" d="m 20,10 0,2 4,0 0,4 2,0 L 26,10 l -6,0 0,0 z" id="ytp-id-1055"></path></g><g class="ytp-fullscreen-button-corner-2"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1056"></use><path class="ytp-svg-fill" d="m 24,24 -4,0 0,2 L 26,26 l 0,-6 -2,0 0,4 0,0 z" id="ytp-id-1056"></path></g><g class="ytp-fullscreen-button-corner-3"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1057"></use><path class="ytp-svg-fill" d="M 12,20 10,20 10,26 l 6,0 0,-2 -4,0 0,-4 0,0 z" id="ytp-id-1057"></path></g></svg>                
+                    <svg class="fullscreen-off"  height="100%"  width="100%" version="1.1" viewBox="0 0 36 36"  fill="#ffffff"><g class="ytp-fullscreen-button-corner-2"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1283"></use><path class="ytp-svg-fill"  d="m 14,14 -4,0 0,2 6,0 0,-6 -2,0 0,4 0,0 z" id="ytp-id-1283"></path></g><g class="ytp-fullscreen-button-corner-3"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1284"></use><path class="ytp-svg-fill" d="m 22,14 0,-4 -2,0 0,6 6,0 0,-2 -4,0 0,0 z" id="ytp-id-1284"></path></g><g class="ytp-fullscreen-button-corner-0"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1285"></use><path class="ytp-svg-fill" d="m 20,26 2,0 0,-4 4,0 0,-2 -6,0 0,6 0,0 z" id="ytp-id-1285"></path></g><g class="ytp-fullscreen-button-corner-1"><use class="ytp-svg-shadow" xlink:href="#ytp-id-1286"></use><path class="ytp-svg-fill" d="m 10,22 4,0 0,4 2,0 0,-6 -6,0 0,2 0,0 z" id="ytp-id-1286"></path></g></svg>
+                </button>
+            </div>
+       
+       
+    </div>
+    <video src="assets/FInale Shivam Karle.mp4" ></video>
+    <script>
+        var player = videojs('assets/FInale Shivam Karle.mp4');
+      
+        player.hlsQualitySelector();
+      </script>
+</div>
+</body>
+</html>

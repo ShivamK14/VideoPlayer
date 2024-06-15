@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "videojs-contrib-quality-levels": "^4.1.0",
+    "videojs-hls-quality-selector": "^2.0.0"
+  },
+  "devDependencies": {
+    "video.js": "^8.12.0"
+  }
+}
